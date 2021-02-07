@@ -7,9 +7,9 @@ const startServer = require('./src/infrastructure/webServerFramework/startApp')
 
 const start = async () => {
 
-  await startDatabase(process.env.APP_DATABASE_CHOICE)
+  await startDatabase()
 
-  const server = await startServer(process.env.APP_WEBSERVER_CHOICE)
+  const server = await startServer()
 
 
   await server.listen(process.env.APP_PORT, () => {
