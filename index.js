@@ -7,13 +7,13 @@ const startServer = require('./src/infrastructure/webServerFramework/startApp')
 
 const start = async () => {
 
-  await startDatabase()
+  // await startDatabase()
 
   const server = await startServer()
 
 
-  await server.listen(process.env.APP_PORT, () => {
-    console.log(`${server.webServerChoice} listening to :${process.env.APP_PORT}`)})
+  await server.listen(3000, () => {
+    console.log(`${server.webServerChoice} listening to : 3000`)})
 }
 
 
