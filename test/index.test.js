@@ -17,7 +17,7 @@ describe('route : /', () => {
     it('should return {wel:"come"}', async (done) => {
         const res = await request.get('/')
 
-        expect(res.body).toEqual({wel:"come"})
+        expect(res.body).toEqual({wel:"co"})
         done()
     })
 })
