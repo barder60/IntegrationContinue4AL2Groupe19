@@ -36,12 +36,9 @@
     "coverageDirectory": "coverage",
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/library/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/coverage/**",
-      "!**/test/**",
-      "!**/__mocks__/**",
-      "!**/apidoc/**"
+      "!**/test/**"
     ]
   }
 }
