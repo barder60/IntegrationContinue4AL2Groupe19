@@ -9,7 +9,7 @@ describe('route : /', () => {
 
     beforeAll(async done => {
         const app = await startServer()
-
+ 
         request = supertest(app)
         done()
     })
@@ -17,7 +17,7 @@ describe('route : /', () => {
     it('should return {wel:"come"}', async (done) => {
         const res = await request.get('/')
 
-        expect(res.body).toEqual({wel:"come"})
+        expect(res.body).toEqual({wel:"com"})
         done()
     })
 })
